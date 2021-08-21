@@ -39,9 +39,9 @@ def solution(orderAmount, taxFreeAmount, serviceFee):
     else:
         supplyPrice = orderAmount - serviceFee
 
-    if supplyPrice - taxFreeAmount = 1:
+    # if supplyPrice - taxFreeAmount = 1:
         return 0
-    supplyPrice = supplyValue + (supplyValue - taxFreeAmount) // 10
+    # supplyPrice = supplyValue + (supplyValue - taxFreeAmount) // 10
 
     answer = 0
     return answer
