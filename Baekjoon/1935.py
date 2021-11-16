@@ -6,6 +6,7 @@ tmp = input().rstrip()
 stack = []
 nums = [int(input()) for _ in range(n)]
 
+
 def calculate(first, second, operator):
     if operator == '+':
         return first + second
