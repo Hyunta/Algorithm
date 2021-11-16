@@ -13,6 +13,8 @@ def check(string):
             tmp = stack.pop()
             if (tmp == '[' and x == ')') or (tmp == '(' and x == ']'):
                 return False
+    if stack:
+        return False
     return True
 
 
