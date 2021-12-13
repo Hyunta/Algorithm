@@ -10,7 +10,6 @@ meetings.sort()
 heap = [0]
 cnt = 1
 
-
 for start, end in meetings:
     if start >= heap[0]:
         heapq.heappushpop(heap, end)
