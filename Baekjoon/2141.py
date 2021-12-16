@@ -1,5 +1,4 @@
 import sys
-
 input = sys.stdin.readline
 
 village_count = int(input())
@@ -8,12 +7,12 @@ village_info = []
 for _ in range(village_count):
     tmp_village = list(map(int, input().split()))
     village_info.append(tmp_village)
-    total_people += village_info[1]
+    total_people += tmp_village[1]
 
-village_info.sort()
+village_info.sort(key=lambda x: [x[0], x[1]])
+
 mid = total_people // 2
-
-if mid % 2 == 1:
+if total_people % 2 == 1:
     mid += 1
 
 count = 0
